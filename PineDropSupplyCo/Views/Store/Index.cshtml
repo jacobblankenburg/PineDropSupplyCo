@@ -1,0 +1,15 @@
+﻿@model IEnumerable<PineDropSupplyCo.Models.Catagorie>
+@{
+    ViewBag.Title = "Store";
+}
+<h3>Browse Products</h3>
+
+<p>
+    Select from @Model.Count() Products:
+</p>
+<ul>
+    @foreach (var catagorie in Model)
+    {
+        <li>@Html.ActionLink(catagorie.Name, "Browse", new { catagorie = catagorie.Name })</li>
+    }
+</ul>

@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                About
+                <small>It's Nice to Meet You!</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li>
+                    @Html.ActionLink("Home", "Index", "Home")
+                </li>
+                <li class="active">About</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="~/Images/MountinPine.jpg"/>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br/>
+        <div class="col-md-3">
+            <h2>Welcome to 'PineDropSupplyCo'</h2>
+            <p>PineDropSupplyCo is a startup company based out of Oak Creek, Co. Our goal is to deliever you home-made products using only the best quality goods. </p>
+        </div>
+    </div>
+</div>
